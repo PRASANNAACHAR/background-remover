@@ -1,0 +1,22 @@
+greatstack video end:1:45:46
+
+client:
+npm create vite@latest
+npm install
+npm install react-router-dom react-toastify
+ npm run dev
+ tailwind css install:
+ npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+clerk loged in : my google account
+prasannaacharr@gmail.com
+
+
+
+server commands:
+npm init
+npm install express cors dotenv nodemon form data jsonwebtoken mongoose multer axios svix razorpay
+
+run commands: npm run server
