@@ -1,4 +1,4 @@
-greatstack video end:1:45:46
+greatstack video end:2:05:53
 
 client:
 npm create vite@latest
