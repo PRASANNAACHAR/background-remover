@@ -1,9 +1,10 @@
-import {Webhook } from 'svix'
+import { Webhook } from 'svix'
 import userModel from '../models/userModel.js'
+
 
 // api controller function to manage clerk usert with database
 // http://localhost:4000/api/user/webhooks
-const clerkwebhooks = async (req,res) => {
+const clerkWebhooks = async (req,res) => {
     
     try {
         
@@ -11,7 +12,7 @@ const clerkwebhooks = async (req,res) => {
         const whook = new Webhook(process.env.CLERK_WEBHOOK_SECRET)
 
         await whook.verify(JSON.stringify(req.body),{
-            "svix-id":req.header["svix-id"],
+            "svix-id":req.headers["svix-id"],
             "svix-timestamp":req.headers["svix-timestamp"],
             "svix-signature":req.headers["svix-signature"]
         })
@@ -67,4 +68,4 @@ const clerkwebhooks = async (req,res) => {
     }
 }
 
-export  {clerkwebhooks}
+export  {clerkWebhooks}
