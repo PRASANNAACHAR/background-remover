@@ -21,3 +21,7 @@ npm init
 npm install express cors dotenv nodemon form data jsonwebtoken mongoose multer axios svix razorpay
 
 run commands: npm run server
+
+
+
+npx update-browserslist-db@latest
